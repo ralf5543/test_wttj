@@ -1,0 +1,26 @@
+{
+  "name": "test_wttj",
+  "version": "1.0.0",
+  "description": "Package json for Welcome To The Fungle test",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ralf5543/test_wttj.git"
+  },
+  "author": "Raphaël Bigot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ralf5543/test_wttj/issues"
+  },
+  "homepage": "https://github.com/ralf5543/test_wttj#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
