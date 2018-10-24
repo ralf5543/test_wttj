@@ -1,0 +1,17 @@
+/* ==================--------------- COLORS ---------------================== */
+$primaryColor: rgb(55, 57, 66);// used for main text
+$secondaryColor: #02b3e4;// used for interactive elements
+$darkBg: rgb(42, 44, 49);// main background for dark elements
+$lightestColor: rgb(255, 255, 255);// mainly used on text in dark components ($darkBg)
+
+/* ==================--------------- WHITE SPACES ---------------================== */
+$space-xs: 4px;
+$space-s: 8px;
+$space-m: 16px;
+$space-l: 32px;
+$space-xl: 64px;
+
+/* ==================--------------- MEDIA QUERIES ---------------================== */
+$mobile: "max-width: 768px";
+$tablet: "min-width: 769px";
+$desktop: "min-width: 1024px";
