@@ -1,0 +1,25 @@
+.companies {
+	max-width: 100%;
+	overflow: hidden;
+	border: 2px solid blue;
+}
+
+.companies__list {
+	display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 100%;
+    grid-auto-flow: column;
+    border: 2px solid orange;
+
+    @media ($tablet) {
+    	grid-template-columns: repeat(auto-fill, calc(100% / 2));
+    }
+
+    @media ($desktop) {
+    	grid-template-columns: repeat(auto-fill, calc(100% / 3));
+    }
+}
+
+.companies__list__element {
+	border: 2px solid red;
+}

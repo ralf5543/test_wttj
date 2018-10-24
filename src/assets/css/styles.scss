@@ -2,8 +2,8 @@
 @import "variables";/* sass (and eventually native) variables */
 @import "fonts";/* fonts :) */
 @import "mixins";/* usefull mixins */
-@import "_main";/* the css for the website itself */
+@import "main";/* the css for the website itself */
 
 
 // =============================------------------------- COMPONENTS -------------------------=============================
-@import "components/_companies";
+@import "_companies";

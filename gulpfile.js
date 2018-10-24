@@ -17,7 +17,7 @@ gulp.task('css', function () {
 
 //Update css files each time a sass file is modified
 gulp.task('csswatch', function () {
-  gulp.watch('./src/assets/css/*.scss', ['css']);
+  gulp.watch('./src/assets/css/**/*.scss', ['css']);
 });
 
 // Build task

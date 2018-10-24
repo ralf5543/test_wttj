@@ -4,10 +4,14 @@ body {
   font-family: $mainFont;
 
   @media($tablet) {
-    background-color: red;
+    padding: $space-s;
   }
 
   @media($desktop) {
-    background-color: green;
+    padding: $space-m;
   }
 }
+
+/* .u-hiddenWording {
+	@include accessible-invisibility;
+} */
