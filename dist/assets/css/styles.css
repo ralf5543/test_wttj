@@ -338,16 +338,25 @@ body {
 
 .companies__list {
   display: grid;
-  grid-template-rows: 300px 300px;
-  grid-template-columns: 100%;
-  grid-auto-flow: column;
-  border: 2px solid orange; }
+  grid-template-rows: 300px;
+  grid-template-columns: repeat(10, 100%);
+  border: 4px solid green; }
   @media (min-width: 769px) {
     .companies__list {
-      grid-template-columns: repeat(auto-fill, calc(100% / 2)); } }
+      display: grid;
+      grid-template-rows: 300px 300px;
+      grid-template-columns: 100%;
+      grid-auto-flow: column;
+      grid-template-columns: repeat(5, calc(100% / 2));
+      transition: all .5s; } }
   @media (min-width: 1024px) {
     .companies__list {
-      grid-template-columns: repeat(auto-fill, calc(100% / 3)); } }
+      grid-template-columns: repeat(5, calc(100% / 3)); } }
 
 .companies__list__element {
   border: 2px solid red; }
+
+.companies__footer__progress {
+  display: inline-block;
+  height: 10px;
+  background-color: pink; }
