@@ -10,14 +10,14 @@ $secondaryFont: garamond, Times, serif;
 // Roboto regular
 @font-face {
   font-family: $mainFont-font-face;
-  src: url("../fonts/roboto/roboto-v18-latin-regular.woff") format("woff"),
-  url("../fonts/roboto/roboto-v18-latin-regular.woff2") format("woff2");
+  src: url("../../../src/assets/fonts/roboto/roboto-v18-latin-regular.woff") format("woff"),
+  url("../../../src/assets/fonts/roboto/roboto-v18-latin-regular.woff2") format("woff2");
 }
 
 //Roboto bold
 @font-face {
   font-family: $mainFont-font-face;
   font-weight: bold;
-  src: url("../fonts/roboto/roboto-v18-latin-900.woff") format("woff"),
-  url("../fonts/roboto/roboto-v18-latin-900.woff2") format("woff2");
+  src: url("../../../src/assets/fonts/roboto/roboto-v18-latin-900.woff") format("woff"),
+  url("../../../src/assets/fonts/roboto/roboto-v18-latin-900.woff2") format("woff2");
 }

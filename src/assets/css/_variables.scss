@@ -2,7 +2,9 @@
 $primaryColor: rgb(55, 57, 66);// used for main text
 $secondaryColor: #02b3e4;// used for interactive elements
 $darkBg: rgb(42, 44, 49);// main background for dark elements
+$lightBg: rgb(75, 77, 85);// slightly less dark background
 $lightestColor: rgb(255, 255, 255);// mainly used on text in dark components ($darkBg)
+$fog: rgba(0, 0, 0, .1);// overlays some blocks
 
 /* ==================--------------- WHITE SPACES ---------------================== */
 $space-xs: 4px;

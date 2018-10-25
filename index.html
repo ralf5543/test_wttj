@@ -1,17 +1,24 @@
 <!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Test Welcome To The Jungle</title>
 
-    <link rel="stylesheet" href="dist/assets/css/styles.css">
+	<link rel="stylesheet" href="dist/assets/css/styles.css">
 
 </head>
 <body>
 
 	<div class="companies">
 		<header class="companies__header">
+			<img class="companies__header__logo"
+			sizes="(max-width: 768px) 6vw, (max-width: 1024px) 5vw, 4vw"
+			src="src/assets/img/wttj-original.png"
+			srcset="src/assets/img/wttj-36px.png 36w,
+			src/assets/img/wttj-36px_2x.png 72w,
+			src/assets/img/wttj-36px_3x.png 108w"
+			alt="Lego illustration">
 			<h2 class="companies__title">Welcome to the Jungle</h2>
 			<nav class="companies__navigation">
 				<button class="companies__navigation__btn companies__navigation__btn--prev js-widgetNav js-widgetPrevBtn">
@@ -23,10 +30,38 @@
 			</nav>
 		</header>
 		<ul class="companies__list js-widgetList">
-			<li class="companies__list__element js-widgetElement">1</li>
+			<li class="companies__list__element js-widgetElement">
+				<a href="#" class="companies__list__element__link">
+					<header class="companies__list__element__header">
+						<h3 class="companies__list__element__title">Bla bla bla...</h3>
+						<p class="companies__list__element__text">Encore du texte</p>
+					</header>
+					<img class="companies__list__element__image"
+					sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+					src="src/assets/img/lego-original.jpg"
+					srcset="src/assets/img/lego-420px.jpg 420w,
+					src/assets/img/lego-420px_2x.jpg 840w,
+					src/assets/img/lego-420px_3x.jpg 1260w"
+					alt="Lego illustration">
+				</a>
+			</li>
 			<li class="companies__list__element js-widgetElement">2</li>
 			<li class="companies__list__element js-widgetElement">3</li>
-			<li class="companies__list__element js-widgetElement">4</li>
+			<li class="companies__list__element js-widgetElement">
+				<a href="#" class="companies__list__element__link">
+					<header class="companies__list__element__header">
+						<h3 class="companies__list__element__title">Bla bla bla...</h3>
+						<p class="companies__list__element__text">Encore du texte</p>
+					</header>
+					<img class="companies__list__element__image"
+					sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+					src="src/assets/img/lego-original.jpg"
+					srcset="src/assets/img/lego-420px.jpg 420w,
+					src/assets/img/lego-420px_2x.jpg 840w,
+					src/assets/img/lego-420px_3x.jpg 1260w"
+					alt="Lego illustration">
+				</a>
+			</li>
 			<li class="companies__list__element js-widgetElement">5</li>
 			<li class="companies__list__element js-widgetElement">6</li>
 			<li class="companies__list__element js-widgetElement">7</li>
@@ -41,7 +76,7 @@
 		</footer>
 	</div>
 
-<script type="text/javascript" src="src/assets/js/companies.js"></script>
+	<script type="text/javascript" src="src/assets/js/companies.js"></script>
 
 </body>
 </html>
