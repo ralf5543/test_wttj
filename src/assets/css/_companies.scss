@@ -55,6 +55,8 @@
 .companies__list__element {
     position: relative;
     overflow: hidden;
+    border: 1px solid red;
+    color: red;
 }
 
 $elementHovered: .3s;
@@ -117,8 +119,8 @@ $elementHovered: .3s;
 }
 
 .companies__footer__progress {
-    display: inline-block;
-    height: 10px;
+    display: block;
+    height: 3px;
     background-color: $secondaryColor;
 }
 
