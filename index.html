@@ -10,6 +10,32 @@
 </head>
 <body>
 
+	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+		<symbol id="icon-angle-right" viewBox="0 0 512 512">
+			<path d="m335 274c0 3-1 5-3 7l-133 133c-2 2-5 3-7 3c-2 0-5-1-7-3l-14-14c-2-2-3-4-3-7c0-2 1-5 3-6l112-113l-112-112c-2-2-3-4-3-7c0-2 1-4 3-6l14-14c2-2 5-3 7-3c2 0 5 1 7 3l133 133c2 2 3 4 3 6z"/>
+		</symbol>
+
+		<symbol id="icon-arrow-right" viewBox="0 0 512 512">
+			<path d="m294 66c-12-11-31-11-42 0c-12 12-12 31 0 42l118 118l-312 0c-16 0-30 14-30 30c0 16 14 30 30 30l312 0l-118 118c-12 11-12 30 0 42c6 6 13 8 21 8c7 0 15-2 21-8l190-190z"/>
+		</symbol>
+
+		<symbol id="icon-arrow-left" viewBox="0 0 512 512">
+			<path d="m218 446c12 11 31 11 42 0c12-12 12-31 0-42l-118-118l312 0c16 0 30-14 30-30c0-16-14-30-30-30l-312 0l118-118c12-11 12-30 0-42c-6-5-13-8-21-8c-8 0-15 3-21 8l-190 190z"/>
+		</symbol>
+
+		<symbol id="icon-magnifying-glass" viewBox="0 0 512 512">
+			<path d="m291 53c-91 0-164 74-164 164c0 31 8 60 23 85l-79 79l0 0c-8 8-14 20-14 33c0 25 21 45 46 45c12 0 24-5 32-14l0 1l82-82c22 11 47 17 74 17c90 0 164-73 164-164c0-90-74-164-164-164z m1 263c-57 0-103-45-103-102c0-56 46-102 103-102c56 0 102 46 102 102c0 57-46 102-102 102z"/>
+		</symbol>
+
+		<symbol id="icon-quote-left" viewBox="0 0 512 512">
+			<path d="m238 274l0 110c0 15-6 28-16 39c-11 11-24 16-39 16l-110 0c-15 0-28-5-39-16c-10-11-16-24-16-39l0-201c0-20 4-39 12-57c8-18 18-33 31-47c13-13 29-23 47-31c18-8 37-11 57-11l18 0c5 0 9 1 13 5c3 4 5 8 5 13l0 36c0 5-2 10-5 13c-4 4-8 6-13 6l-18 0c-21 0-38 7-52 21c-14 14-22 32-22 52l0 9c0 8 3 14 8 19c6 6 12 8 20 8l64 0c15 0 28 6 39 16c10 11 16 24 16 39z m256 0l0 110c0 15-6 28-16 39c-11 11-24 16-39 16l-110 0c-15 0-28-5-39-16c-10-11-16-24-16-39l0-201c0-20 4-39 12-57c8-18 18-33 31-47c13-13 29-23 47-31c18-8 37-11 57-11l18 0c5 0 9 1 13 5c3 4 5 8 5 13l0 36c0 5-2 10-5 13c-4 4-8 6-13 6l-18 0c-21 0-38 7-52 21c-14 14-22 32-22 52l0 9c0 8 3 14 8 19c6 6 12 8 20 8l64 0c15 0 28 6 39 16c10 11 16 24 16 39z"/>
+		</symbol>
+
+	</svg>
+
+
+
 	<div class="companies">
 		<header class="companies__header">
 			<img class="companies__header__logo"
@@ -21,10 +47,12 @@
 			alt="Welcome to the Jungle logo">
 			<h2 class="companies__title">Welcome to the Jungle</h2>
 			<nav class="companies__navigation">
-				<button class="companies__navigation__btn companies__navigation__btn--prev js-widgetNav js-widgetPrevBtn">
+				<button class="companies__navigation__btn js-widgetNav js-widgetPrevBtn">
+					<svg class="icon-arrow-left companies__navigation__icon"><use xlink:href="#icon-arrow-left"></use></svg>
 					<span class="u-hiddenWording">Previous</span>
 				</button>
-				<button class="companies__navigation__btn companies__navigation__btn--next js-widgetNav js-widgetNextBtn">
+				<button class="companies__navigation__btn js-widgetNav js-widgetNextBtn">
+					<svg class="icon-arrow-right companies__navigation__icon"><use xlink:href="#icon-arrow-right"></use></svg>
 					<span class="u-hiddenWording">Next</span>
 				</button>
 			</nav>
@@ -32,10 +60,6 @@
 		<ul class="companies__list js-widgetList">
 			<li class="companies__list__element js-widgetElement">
 				<a href="#" class="companies__list__element__link">
-					<header class="companies__list__element__header">
-						<h3 class="companies__list__element__title">Bla bla bla...</h3>
-						<p class="companies__list__element__text">Encore du texte</p>
-					</header>
 					<img class="companies__list__element__image"
 					sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
 					src="src/assets/img/lego-original.jpg"
@@ -48,7 +72,7 @@
 			<li class="companies__list__element js-widgetElement">
 				<a href="#" class="companies__list__element__link">
 					<header class="companies__list__element__header">
-						<h3 class="companies__list__element__title">Bla bla bla...</h3>
+						<h3 class="companies__list__element__title">Lorem Ipsum...</h3>
 						<p class="companies__list__element__text">Encore du texte</p>
 					</header>
 					<img class="companies__list__element__image"
@@ -61,12 +85,62 @@
 				</a>
 			</li>
 			<li class="companies__list__element js-widgetElement">
-				<q class="companies__list__element__citation">Life is short, work somewhere awesome.</q>
+				<q class="companies__list__element__citation">
+					<svg class="icon-quote-left companies__list__element__citation_icon"><use xlink:href="#icon-quote-left"></use></svg>
+				Life is short, work somewhere awesome.
+			</q>
 			</li>
 			<li class="companies__list__element js-widgetElement">
 				<a href="#" class="companies__list__element__link">
 					<header class="companies__list__element__header">
-						<h3 class="companies__list__element__title">Bla bla bla...</h3>
+						<h3 class="companies__list__element__title">Lorem Ipsum...</h3>
+						<p class="companies__list__element__text">Encore du texte</p>
+					</header>
+					<img class="companies__list__element__image"
+					sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+					src="src/assets/img/Lego-Turkish-Airlines-original.jpg"
+					srcset="src/assets/img/Lego-Turkish-Airlines-420px.jpg 420w,
+					src/assets/img/Lego-Turkish-Airlines-420px_2x.jpg 840w,
+					src/assets/img/Lego-Turkish-Airlines-420px_3x.jpg 1260w"
+					alt="Lego illustration">
+				</a>
+			</li>
+			<li class="companies__list__element js-widgetElement">
+				<a href="#" class="companies__list__element__link">
+					<header class="companies__list__element__header">
+						<h3 class="companies__list__element__title">Lorem Ipsum...</h3>
+						<p class="companies__list__element__text">Encore du texte</p>
+					</header>
+					<img class="companies__list__element__image"
+					sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+					src="src/assets/img/legoAlt-original.jpg"
+					srcset="src/assets/img/legoAlt-420px.jpg 420w,
+					src/assets/img/legoAlt-420px_2x.jpg 840w,
+					src/assets/img/legoAlt-420px_3x.jpg 1260w"
+					alt="Lego illustration">
+				</a>
+			</li>
+			<li class="companies__list__element js-widgetElement">
+				<a href="#" class="companies__list__element__link">
+					<img class="companies__list__element__image"
+					sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+					src="src/assets/img/lego-original.jpg"
+					srcset="src/assets/img/lego-420px.jpg 420w,
+					src/assets/img/lego-420px_2x.jpg 840w,
+					src/assets/img/lego-420px_3x.jpg 1260w"
+					alt="Lego illustration">
+				</a>
+			</li>
+			<li class="companies__list__element js-widgetElement">
+				<q class="companies__list__element__citation">
+					<svg class="icon-quote-left companies__list__element__citation_icon"><use xlink:href="#icon-quote-left"></use></svg>
+				Life is short, work somewhere awesome.
+			</q>
+			</li>
+			<li class="companies__list__element js-widgetElement">
+				<a href="#" class="companies__list__element__link">
+					<header class="companies__list__element__header">
+						<h3 class="companies__list__element__title">Lorem Ipsum...</h3>
 						<p class="companies__list__element__text">Encore du texte</p>
 					</header>
 					<img class="companies__list__element__image"
@@ -94,61 +168,18 @@
 				</a>
 			</li>
 			<li class="companies__list__element js-widgetElement">
-				<a href="#" class="companies__list__element__link">
-					<header class="companies__list__element__header">
-						<h3 class="companies__list__element__title">Bla bla bla...</h3>
-						<p class="companies__list__element__text">Encore du texte</p>
-					</header>
-					<img class="companies__list__element__image"
-					sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-					src="src/assets/img/lego-original.jpg"
-					srcset="src/assets/img/lego-420px.jpg 420w,
-					src/assets/img/lego-420px_2x.jpg 840w,
-					src/assets/img/lego-420px_3x.jpg 1260w"
-					alt="Lego illustration">
-				</a>
-			</li>
-			<li class="companies__list__element js-widgetElement">
-				<q class="companies__list__element__citation">Life is short, work somewhere awesome.</q>
-			</li>
-			<li class="companies__list__element js-widgetElement">
-				<a href="#" class="companies__list__element__link">
-					<header class="companies__list__element__header">
-						<h3 class="companies__list__element__title">Bla bla bla...</h3>
-						<p class="companies__list__element__text">Encore du texte</p>
-					</header>
-					<img class="companies__list__element__image"
-					sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-					src="src/assets/img/Lego-Turkish-Airlines-original.jpg"
-					srcset="src/assets/img/Lego-Turkish-Airlines-420px.jpg 420w,
-					src/assets/img/Lego-Turkish-Airlines-420px_2x.jpg 840w,
-					src/assets/img/Lego-Turkish-Airlines-420px_3x.jpg 1260w"
-					alt="Lego illustration">
-				</a>
-			</li>
-			<li class="companies__list__element js-widgetElement">
-				<a href="#" class="companies__list__element__link">
-					<header class="companies__list__element__header">
-						<h3 class="companies__list__element__title">Bla bla bla...</h3>
-						<p class="companies__list__element__text">Encore du texte</p>
-					</header>
-					<img class="companies__list__element__image"
-					sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-					src="src/assets/img/legoAlt-original.jpg"
-					srcset="src/assets/img/legoAlt-420px.jpg 420w,
-					src/assets/img/legoAlt-420px_2x.jpg 840w,
-					src/assets/img/legoAlt-420px_3x.jpg 1260w"
-					alt="Lego illustration">
-				</a>
-			</li>
-			<li class="companies__list__element js-widgetElement">
-				<q class="companies__list__element__citation">Life is short, work somewhere awesome.</q>
+				<q class="companies__list__element__citation">
+					<svg class="icon-quote-left companies__list__element__citation_icon"><use xlink:href="#icon-quote-left"></use></svg>
+				Life is short, work somewhere awesome.
+			</q>
 			</li>
 		</ul>
 
 		<footer class="companies__footer">
 			<div class="companies__footer__progress__wrapper">
-				<span class="companies__footer__progress js-progress"></span>
+				<span class="companies__footer__progress js-progress">
+					<span class="js-progressAmount u-hiddenWording">Progress statut</span>
+				</span>
 			</div>
 			<div class="companies__footer__inner">
 				<img class="companies__footer__logo" src="src/assets/img/wttj_logo_vecto.svg" alt="Welcome to the Jungle logo">

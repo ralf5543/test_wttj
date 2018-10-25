@@ -53,6 +53,11 @@ let progress = (visibleElemsByLine * 100) / elemsByLine;
 //the amount of progression in %, after each clic navigation
 const progressFraction = progress / visibleElemsByLine;
 
+//Required for accessibility
+const progressAmount = document.querySelector('.js-progressAmount');
+progressAmount.textContent = `${originalProgress}%`;
+
+//set the width of the bar in %
 progressBar.style.width = `${progress}%`;
 
 //adds margin left and right to the contenair
@@ -62,12 +67,8 @@ function moveWidget() {
 
 	progress = originalProgress + (progressFraction * navStep);
 	progressBar.style.width = `${progress}%`;
+	progressAmount.textContent = `${progress}%`;
 }
-
-console.log('original pourcentage', originalProgress);
-console.log('pourcentage', progress);
-console.log('fraction', progressFraction);
-
 
 prevBtn.addEventListener('click', function () {
 	if (navStep > 0) {
@@ -91,7 +92,4 @@ nextBtn.addEventListener('click', function () {
 		}
 
 	}
-
-	console.log('pourcentage', progress);
-	console.log('fraction', progressFraction);
 });
